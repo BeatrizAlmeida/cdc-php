@@ -31,7 +31,7 @@ function printTable($n, $cf, $entrada, $financiado, $pago, $taxa, $meses) {
 
     for ($x = 0; $x <= $n; $x++) {
         if ($x == 0)
-            $table .= "<tr><td>{$x}</td><td>{$pmt}</td><td>(" . number_format($taxa / 100, 4, '.', '') . ")</td><td>0.00</td><td>{$sd}</td></tr>";
+            $table .= "<tr><td>{$x}</td><td>{$pmt}</td><td>(" . number_format($taxa / 100, 4, '.', '') . ")</td><td>0.00</td><td>(" . number_format($sd, 2, '.', '') . ")</td></tr>";
         else {
             $J = ($sd * $taxa / 100);
             $somaJuros += $J;
