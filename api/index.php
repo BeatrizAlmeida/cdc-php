@@ -117,7 +117,7 @@
         <legend style="border: 5px lightblue solid; margin-left: 1em; background-color: #ff6347; padding: 0.2em 0.8em;">
             <strong>Crédito Direto ao Consumidor</strong>
         </legend>
-        <form id="cdc_form" action="action.php" method="post">
+        <form id="cdc_form" action="/api/action.php" method="post">
         <div class="box">
                     <span class="input-group-addon" style="color: antiquewhite"
                         >$</span
@@ -238,12 +238,10 @@
                 // Envia os dados do formulário via AJAX para o PHP
                 $.ajax({
                     type: "POST",
-                    url: "action.php",
+                    url: "/api/action.php",
                     data: $("#cdc_form").serialize(), // Serializa os dados do formulário
                     success: function(response) {
-                        console.log(" antes", response)
                         response = JSON.parse(response);
-                        console.log(response)
                         // Atualiza a div com o resultado retornado pelo PHP
                         if(response.errorMessage != "") {
 
