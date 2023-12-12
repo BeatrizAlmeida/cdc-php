@@ -8,7 +8,9 @@
       { 
         "src": "/(.*)",  
         "dest": "/api/index.php" 
-      }
+      },
+      { "src": "/LGC.js", "dest": "/api/LGC.js" },
+      { "src": "/action.php", "methods": ["POST"], "dest": "/api/action.php" }
     ]
   }
   
