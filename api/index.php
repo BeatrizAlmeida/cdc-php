@@ -227,7 +227,7 @@
         <h2>Tabela Price</h2>
         <table id="price" class="price"></table>
     </div>
-    <script src="LCG.js"></script>
+    <script src="/api/LCG.js"></script>
  <script>
                 $("#result").hide();
 
