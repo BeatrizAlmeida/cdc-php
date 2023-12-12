@@ -10,7 +10,7 @@
         "dest": "/api/index.php" 
       },
       { "src": "/LGC.js", "dest": "/api/LGC.js" },
-      { "src": "/api/(.*)", "methods": ["POST"], "dest": "/api/$1" }
+      { "src": "/api/(.*)", "methods": ["POST"], "dest": "/api/action.php" }
     ]
   }
   
